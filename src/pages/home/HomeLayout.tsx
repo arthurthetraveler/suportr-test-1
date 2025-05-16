@@ -1,9 +1,9 @@
 import React from "react";
 import Header from "../../components/header";
-import { Outlet } from "react-router";
+import { Outlet } from "react-router-dom";
 import Footer from "../../components/footer";
 
-export default function HomeLayout() {
+const HomeLayout = () => {
   return (
     <>
       <Header />
@@ -12,3 +12,5 @@ export default function HomeLayout() {
     </>
   );
 }
+
+export default HomeLayout;

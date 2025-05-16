@@ -2,7 +2,9 @@
 import React, { useState } from "react";
 import { Navigate, useNavigate } from "react-router";
 
-
+type PasswordGateProps = {
+  children?: React.ReactNode;
+};
 
 const PasswordGate: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const navigate = useNavigate();

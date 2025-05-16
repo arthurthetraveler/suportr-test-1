@@ -25,7 +25,7 @@ function App() {
   return (
     <Routes>
       <Route element={<HomeLayout />}> 
-        <Route index element={<PasswordGate children={undefined} />} /> 
+        <Route path="auth" element={<PasswordGate children={undefined} />} /> 
         <Route path="home" element={<Home />} />
         <Route path="choose-team" element={<ChooseTeam />} />
         <Route path="fan" element={<Fan />} />
