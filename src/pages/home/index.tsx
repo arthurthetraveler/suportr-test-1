@@ -13,7 +13,7 @@ import { formatNumber } from "../../utils";
 import { Icon } from "@iconify/react";
 import { useLocation } from "react-router";
 import CountdownTimer from "../../components/countdown/bodytimer";
-import './index.css';
+import '../home/index.css';
 import { useNavigate } from "react-router";
 import CheckOut from "../../components/button/checkout";
 import LoyaltyModal from "../../components/modal/loyaltypopup";

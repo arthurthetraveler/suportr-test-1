@@ -2,7 +2,7 @@ import React from "react";
 import { Colors } from "../Colors";
 import Marquee from "react-fast-marquee";
 import { Link } from "react-router";
-import AutoScrollingLeaderboard from "./AutoScrollingLeaderBoardFooter";
+import AutoScrollingLeaderboard from "../footer/AutoScrollingLeaderBoardFooter";
 import Logo from "../../assets/images/logo.png";
 
 export default function Footer() {
