@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   font-family: "Darker Grotesque", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gradient-text-outline {
+  -webkit-text-stroke: 2px transparent;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(to right, #07f9a8, #6f27e4); /* green-500 to purple-500 */
+  -webkit-background-clip: text;
+  background-clip: text;
+  position: relative;
+}
+
+.gradient-text-outline:before {
+  content: attr(data-text);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: inherit;
+  -webkit-text-stroke: 2px transparent;
+  z-index: -1;
+}
